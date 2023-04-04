@@ -40,7 +40,7 @@ function createTimeOutEvent(date) {
     this.timeOutEvents.push(outEvent);
     return this;
 }
-
+// since we have the in and out time lets find the hours worked on a specific date
 let hoursWorkedOnDate = function(workDate){
     let inEvent = this.timeInEvents.find(function(e){
         return e.date === workDate
